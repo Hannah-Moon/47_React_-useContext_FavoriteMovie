@@ -1,13 +1,11 @@
 # React `useConext' hook: Favorite Movie 🎬
 
 > This project is a simple movie search app that can store favorite movies built with React useContext.
-
-- The app allows users to search for movies or actors, view a list of movie results, sort the results based on different criteria, and view detailed information about each movie.
-- If users like the movie, they can store the movie by clicking favorite movie icon to store the movie in their folder.
+> If users like the movie, they can store the movie by clicking favorite movie icon to store the movie in their folder.
 
 <img alt='screen capture' src="/assets/movie.png"></div>
 
-## Key features
+## 🔑 Key features
 
 - Movies Post
 - Responsive
@@ -23,7 +21,7 @@
 - Use the Context.Provider component to provide context from a parent component.
 - Integrate context with state to allow for interactive context values.
 
-## 🎯 Key technique
+## 🛠️ Key technique
 
 In order to use `useContext',
 
@@ -47,23 +45,16 @@ CONSUMER COMPONENTS
 
 ```
 
-## Presteps
+## 📝 Prep.steps
 
 ```
+npx create-react-app favorite-movie
+npm install axios
 npm install -D tailwindcss
 npx tailwindcss init
-```
-
-```
 npm i react-router-dom
 ```
 
 ## 🔗 API
 
 - I used OMDB API: http://www.omdbapi.com/
-
-## Pre-steps
-
-`npx create-react-app favorite-movie`
-
-`npm install axios`
