@@ -7,23 +7,23 @@
 
 ## 🔑 Key features
 
-- Movies Post
-- Responsive
-- Hover
-- Overview
-- Vote average
+- Display movie posts
+- Search for movies
+- Implement functional and responsive buttons, and movie hover-over effects
+- Save favorite movies
+- Remove from favorite movies
 
-## 🎯 Learning objectives
+## 🎯 Objectives
 
 - Avoid prop drilling through the use of React context.
-- Use createContext to define and export new context for an application.
-- Use the useContext hook to read from context within descendant components.
-- Use the Context.Provider component to provide context from a parent component.
+- Use `createContext` to define and export new context for an application.
+- Use the `useContext` hook to read from context within descendant components.
+- Use the `Context.Provider` component to provide context from a parent component.
 - Integrate context with state to allow for interactive context values.
 
 ## 🛠️ Key technique
 
-In order to use `useContext',
+In order to use `useContext`,
 
 - Create and export the context using the syntax `export const SomeContext = createContext(defaultValue)`.
 - Read the value of the context using the syntax `useContext(SomeContext)`, which can be done from any child component, no matter how deep.
