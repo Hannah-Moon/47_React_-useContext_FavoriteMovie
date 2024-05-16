@@ -1,7 +1,7 @@
-# React `useConext' hook: Favorite Movie 🎬
+# React `useConext` hook: Favorite Movie 🎬
 
-> This project is a simple movie search app that can store favorite movies built with React useContext.
-> If users like the movie, they can store the movie by clicking favorite movie icon to store the movie in their folder.
+- This project is a simple movie search app that can store favorite movies built with React useContext.
+- If users like the movie, they can store the movie by clicking favorite movie icon to store the movie in their folder.
 
 <img alt='screen capture' src="/assets/movie.png"></div>
 
@@ -42,7 +42,6 @@ CONSUMER COMPONENTS
 1. Import React, { UseContext } from ‘react’;
 	import {MyContext } from ‘./ComponentA’;
 2. Const value = useContext(MyContext);
-
 ```
 
 ## 📝 Prep.steps

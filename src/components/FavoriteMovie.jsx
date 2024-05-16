@@ -1,11 +1,10 @@
-import React from "react";
-import { useContext } from "react";
+import React, { useContext } from "react";
 import { MovieContext } from "../context-and-reducer/MovieContext";
 
-const Movie = ({ item }) => {
-  const { addToFavorite } = useContext(MovieContext);
-  const handleAdd = () => {
-    addToFavorite(item);
+const FavoriteMovie = ({ item }) => {
+  const { removeFromFavorite } = useContext(MovieContext);
+  const handleRemove = () => {
+    removeFromFavorite(item);
   };
   return (
     <div className="mx-auto px-7 border border-pink-100 hover:border-yellow-300 rounded-lg mt-2 mb-2 ml-2 mr-2">
@@ -26,12 +25,11 @@ const Movie = ({ item }) => {
       </div>
       <button
         className="bg-pink-700 text-white text-lg font-medium rounded-md p-1 hover:bg-yellow-500 mt-2 mb-5"
-        onClick={handleAdd}
+        onClick={handleRemove}
       >
-        Add to favorite
+        Remove
       </button>
     </div>
   );
 };
-
-export default Movie;
+export default FavoriteMovie;

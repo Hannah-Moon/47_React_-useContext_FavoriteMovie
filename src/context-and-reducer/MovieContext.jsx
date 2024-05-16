@@ -1,20 +1,19 @@
-import { createContext, useReducer } from "react"; // Added useReducer import
+import { createContext, useReducer } from "react";
 import reducer, { initialState } from "./reducer";
 
-export const MovieContext = createContext;
+export const MovieContext = createContext();
 
 export const MovieProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, initialState);
   const addToFavorite = (movie) => {
     const updateFavorite = state.movies;
     updateFavorite.push(movie);
-
     dispatch({
       type: "add",
       payload: updateFavorite,
     });
   };
-  const removefromFavorite = (movie) => {
+  const removeFromFavorite = (movie) => {
     const updateFavorite = state.movies.filter(
       (currentMovie) => currentMovie.name !== movie.name
     );
@@ -25,5 +24,13 @@ export const MovieProvider = ({ children }) => {
     });
   };
 
-  return <MovieContext.Provider>{children}</MovieContext.Provider>;
+  const value = {
+    movies: state.movies,
+    addToFavorite,
+    removeFromFavorite,
+  };
+
+  return (
+    <MovieContext.Provider value={value}>{children}</MovieContext.Provider>
+  );
 };

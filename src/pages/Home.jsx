@@ -7,11 +7,13 @@ const Home = () => {
   return (
     <div>
       <Navbar />
-      <h1 className="text-3xl text-center front-semibold mt-2 ply-2">
-        useContext + useReducer
-      </h1>
-      <h2 className="text-4xl tracking-wide py-4 pl-8">Movie</h2>
-      <div className="flex flex-col items-center lg:grid lg:grid-cols-3 px-8">
+      <h2 className="font-semibold flex flex-col items-left text-8xl tracking-wide mt-20 pl-20">
+        Unlimited movies
+      </h2>
+      <h3 className="font-light items-left text-2xl tracking-wide mb-5 pl-20">
+        Save your favorite movies. Remove them anytime.
+      </h3>
+      <div className="flex flex-col items-center lg:grid lg:grid-cols-3 px-8 mt-10 mb-10">
         {movieData.map((item, i) => (
           <Movie key={i} item={item} />
         ))}
