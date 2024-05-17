@@ -1,26 +1,26 @@
 import React, { useContext } from "react";
 import { MovieContext } from "../context-and-reducer/MovieContext";
 
-const FavoriteMovie = ({ item }) => {
+const FavoriteMovie = ({ movie }) => {
   const { removeFromFavorite } = useContext(MovieContext);
+
   const handleRemove = () => {
-    removeFromFavorite(item);
+    removeFromFavorite(movie);
   };
+
   return (
     <div className="mx-auto px-7 border border-pink-100 hover:border-yellow-300 rounded-lg mt-2 mb-2 ml-2 mr-2">
-      <img
-        src={item.Poster}
-        alt={item.Title}
-        className="w-100 h-150 mt-5 mb-5"
-      />
+      <img src={movie.Poster} alt={movie.Title} className="moviePoster" />
       <div className="movieDetail">
         <div className="mt-2 mb-2">
-          <p className="text-xl font-semibold">{item.Title}</p>
-          <p className="text-base font-medium round-full">{item.Year}</p>
-          <p className="text-base font-bold">{item.Rated}</p>
-          {/* <p className="text-sm">Director: {item.Director}</p> */}
-          {/* <p className="text-sm">Actors: {item.Actors}</p> */}
-          {/* <p className="text-sm">{item.Plot}</p> */}
+          <p className="text-xl font-semibold">{movie.Title}</p>
+          <p className="text-base font-medium round-full">{movie.Year}</p>
+          <p className="text-base font-bold">
+            {movie.Rated} ⋅ {movie.Genre}
+          </p>
+          {/* <p className="text-sm">Director: {movie.Director}</p> */}
+          {/* <p className="text-sm">Actors: {movie.Actors}</p> */}
+          {/* <p className="text-sm">{movie.Plot}</p> */}
         </div>
       </div>
       <button
@@ -32,4 +32,5 @@ const FavoriteMovie = ({ item }) => {
     </div>
   );
 };
+
 export default FavoriteMovie;

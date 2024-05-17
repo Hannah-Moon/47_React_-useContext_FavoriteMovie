@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home.jsx";
 import Favorite from "./pages/Favorite.jsx";
 import { MovieProvider } from "./context-and-reducer/MovieContext.jsx";
+// import { useState, useEffect } from "react";
 
 function App() {
   return (
