@@ -1,7 +1,7 @@
 # React `useConext` hook: Favorite Movie 🎬
 
 - This project is a simple movie search app that can store favorite movies built with React useContext.
-- If users like the movie, they can store the movie by clicking favorite movie icon to store the movie in their folder.
+- If users like the movie, they can store it by clicking the favorite movie icon in their folder.
 
 <img alt='screen capture' src="/assets/favoriteMovie.gif"></div>
 
@@ -9,7 +9,7 @@
 
 - Display movie posts
 - Search for movies
-- Implement functional and responsive buttons, and movie hover-over effects
+- Implement functional and responsive buttons and movie hover-over effects
 - Save favorite movies
 - Remove from favorite movies
 
@@ -28,7 +28,7 @@ In order to use `useContext`,
 - Create and export the context using the syntax `export const SomeContext = createContext(defaultValue)`.
 - Read the value of the context using the syntax `useContext(SomeContext)`, which can be done from any child component, no matter how deep.
 - Wrap the child components within a context provider and provide a value using the syntax `<SomeContext.Provider value={someValue}>` from within the parent component that sets the context value.
-  Here is the example:
+  Here is an example:
 
 ```
 PROVIDER COMPONENT
@@ -44,7 +44,7 @@ CONSUMER COMPONENTS
 2. Const value = useContext(MyContext);
 ```
 
-## 📝 Prep.steps
+## 📝 Prep. steps
 
 ```
 npx create-react-app favorite-movie
