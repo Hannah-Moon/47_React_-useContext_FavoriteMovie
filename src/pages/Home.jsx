@@ -46,7 +46,7 @@ const Home = () => {
         Unlimited movies
       </h2>
       <h3 className="font-light items-left text-2xl tracking-wide mb-0 pl-10">
-        Save your as many as your favorite movies.
+        Save your favorite movies.
       </h3>
       <div className="flex justify-end px-8 mt-0 mb-5">
         <Form moviesearch={getMovies} />

@@ -15,7 +15,7 @@ export const MovieProvider = ({ children }) => {
   };
   const removeFromFavorite = (movie) => {
     const updateFavorite = state.movies.filter(
-      (currentMovie) => currentMovie.name !== movie.name
+      (currentMovie) => currentMovie.Title !== movie.Title
     );
 
     dispatch({

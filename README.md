@@ -57,3 +57,10 @@ npm i react-router-dom
 ## 🔗 API
 
 - I used OMDB API: http://www.omdbapi.com/
+
+## 👷🏻 Note for future enhancement
+
+- Reformat Favorite Movie Page
+- Add Logic to Prevent Duplicate Entries in Favorite Basket
+- Test Different Movie APIs to Display Multiple Movies
+- Implement Additional Search Functions Beyond Title Search

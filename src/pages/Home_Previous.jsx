@@ -8,10 +8,10 @@ const Home = () => {
     <div>
       <Navbar />
       <h2 className="font-semibold flex flex-col items-left text-8xl tracking-wide mt-20 pl-20">
-        Unlimited movies
+        Favorite movies
       </h2>
       <h3 className="font-light items-left text-2xl tracking-wide mb-5 pl-20">
-        Save your favorite movies. Remove them anytime.
+        Save movies you want to watch. Remove them anytime.
       </h3>
       <div className="flex flex-col items-center lg:grid lg:grid-cols-3 px-8 mt-10 mb-10">
         {movieData.map((item, i) => (

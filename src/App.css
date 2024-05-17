@@ -15,12 +15,12 @@ body {
   /* margin-top: 0.5rem;
   margin-bottom: 2rem; */
   border-radius: 20px 0px 0px 20px;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: grey;
 }
 
 .submitBtn {
-  height: 3.2rem;
+  height: 3rem;
   width: 5rem;
 
   color: #fff;
